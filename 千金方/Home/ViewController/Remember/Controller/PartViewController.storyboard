@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CKI-CU-DPc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Part View Controller-->
+        <scene sceneID="932-5c-WaQ">
+            <objects>
+                <viewController id="CKI-CU-DPc" customClass="PartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ivz-hF-B5c"/>
+                        <viewControllerLayoutGuide type="bottom" id="eSq-LC-xSb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Waq-er-7qs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8l-uF-wPt">
+                                <rect key="frame" x="10" y="30" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入药名，以逗号分隔,请不要重复..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7x8-ix-U1f">
+                                <rect key="frame" x="10" y="61" width="355" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRJ-RC-tN5">
+                                <rect key="frame" x="320" y="101" width="35" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="提交">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitClick:" destination="CKI-CU-DPc" eventType="touchUpInside" id="a2T-Ch-Sxq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8k-3A-aim">
+                                <rect key="frame" x="187.5" y="144" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.1110815144" blue="0.19859519640000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的得分为：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZR-tq-L0X">
+                                <rect key="frame" x="73.5" y="134" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7x8-ix-U1f" secondAttribute="trailing" constant="10" id="7rb-Pi-SeH"/>
+                            <constraint firstItem="g8k-3A-aim" firstAttribute="centerY" secondItem="AZR-tq-L0X" secondAttribute="centerY" id="GaU-Cv-SKj"/>
+                            <constraint firstAttribute="trailing" secondItem="E8l-uF-wPt" secondAttribute="trailing" constant="10" id="IYC-HW-imc"/>
+                            <constraint firstItem="7x8-ix-U1f" firstAttribute="top" secondItem="E8l-uF-wPt" secondAttribute="bottom" constant="10" id="JEg-Lu-7a4"/>
+                            <constraint firstItem="E8l-uF-wPt" firstAttribute="top" secondItem="ivz-hF-B5c" secondAttribute="bottom" constant="10" id="Qx4-pc-sqI"/>
+                            <constraint firstItem="g8k-3A-aim" firstAttribute="leading" secondItem="AZR-tq-L0X" secondAttribute="trailing" constant="10" id="XrQ-y9-6Yp"/>
+                            <constraint firstItem="7x8-ix-U1f" firstAttribute="leading" secondItem="Waq-er-7qs" secondAttribute="leading" constant="10" id="azj-XD-OWh"/>
+                            <constraint firstItem="g8k-3A-aim" firstAttribute="top" secondItem="MRJ-RC-tN5" secondAttribute="bottom" constant="10" id="dgX-Fr-5Wd"/>
+                            <constraint firstItem="MRJ-RC-tN5" firstAttribute="top" secondItem="7x8-ix-U1f" secondAttribute="bottom" constant="10" id="m11-38-THd"/>
+                            <constraint firstItem="E8l-uF-wPt" firstAttribute="leading" secondItem="Waq-er-7qs" secondAttribute="leading" constant="10" id="nyt-IP-rhy"/>
+                            <constraint firstItem="g8k-3A-aim" firstAttribute="centerX" secondItem="Waq-er-7qs" secondAttribute="centerX" id="vQQ-5v-yj9"/>
+                            <constraint firstAttribute="trailing" secondItem="MRJ-RC-tN5" secondAttribute="trailing" constant="20" id="z7E-22-cFi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tmn-qs-aJ0"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="E8l-uF-wPt" id="eJL-ob-wAp"/>
+                        <outlet property="scoreLabel" destination="g8k-3A-aim" id="MN5-k6-eB5"/>
+                        <outlet property="submitBtn" destination="MRJ-RC-tN5" id="WCE-0E-tzM"/>
+                        <outlet property="textfield" destination="7x8-ix-U1f" id="yZS-VV-M2E"/>
+                        <outlet property="tipLabel" destination="AZR-tq-L0X" id="Vl6-OG-pbe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNS-EW-7V8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="180"/>
+        </scene>
+    </scenes>
+</document>

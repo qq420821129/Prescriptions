@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  千金方
+//
+//  Created by 周小伟 on 2017/1/13.
+//  Copyright © 2017年 周小伟. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define kThemeChanged @"themeChanged"
+#import "UIColor+MyColor.h"
+#import "XFactory.h"
+#import "UIView+Constrait.h"
+#import "RTLabel.h"
+
+#define ScreenSize ([UIScreen mainScreen].bounds.size)
+#define kPreviousClickNotificationName @"PreviousClick"
+#define kNextClickNotificationName @"NextClick"
+#define kRememberClickNotificationName @"RememberClick"
+#define kPartViewBackNotification @"PartViewBackNotification"
+#endif /* PrefixHeader_pch */
